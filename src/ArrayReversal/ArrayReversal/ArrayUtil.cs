@@ -36,17 +36,13 @@ namespace ArrayReversal
             return arr;
         }
 
-        public static int[] reverseLikeZenMaster(int[] arr)
+        public static void reverseLikeZenMaster(int[] arr)
         {
-            if (arr == null)
+            if (arr != null)
             {
-                return null;
+                // Someone already solved this problem, next task please!
+                Array.Reverse(arr);
             }
-
-            // Someone already solved this problem, next task please!
-            Array.Reverse(arr);
-
-            return arr;
         }
 
         public static int[] reverseLikeMicrosoft(int[] arr)

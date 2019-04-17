@@ -30,8 +30,8 @@ namespace ArrayReversalTests
         [Test]
         public void WhenIamZenMaster()
         {
-            var actual = ArrayUtil.reverseLikeZenMaster(_input);
-            Assert.IsNull(actual);
+            ArrayUtil.reverseLikeZenMaster(_input);
+            Assert.IsNull(_input);
         }
 
         [Test]
