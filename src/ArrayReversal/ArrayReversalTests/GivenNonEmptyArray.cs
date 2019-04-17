@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace ArrayReversalTests
 {
-    public class ArrayUtilTests
+    public class GivenNonEmptyArray
     {
         private int[] _input;
         private int[] _expected;
@@ -19,30 +19,35 @@ namespace ArrayReversalTests
         public void WhenIamNoob()
         {
             var actual = ArrayUtil.reverseLikeNoob(_input);
-            for (var i = 0; i < _input.Length; i++)
-            {
-                Assert.AreEqual(_expected[i], actual[i]);
-            }
+            Assert.AreEqual(_expected, actual);
         }
 
         [Test]
         public void WhenIamPro()
         {
             var actual = ArrayUtil.reverseLikePro(_input);
-            for (var i = 0; i < _input.Length; i++)
-            {
-                Assert.AreEqual(_expected[i], actual[i]);
-            }
+            Assert.AreEqual(_expected, actual);
         }
 
         [Test]
         public void WhenIamZenMaster()
         {
             var actual = ArrayUtil.reverseLikeZenMaster(_input);
-            for (var i = 0; i < _input.Length; i++)
-            {
-                Assert.AreEqual(_expected[i], actual[i]);
-            }
+            Assert.AreEqual(_expected, actual);
+        }
+
+        [Test]
+        public void WhenIamMicrosoft()
+        {
+            var actual = ArrayUtil.reverseLikeMicrosoft(_input);
+            Assert.AreEqual(_expected, actual);
+        }
+
+        [Test]
+        public void WhenICopyAndReverse()
+        {
+            var actual = ArrayUtil.copyAndReverse(_input);
+            Assert.AreEqual(_expected, actual);
         }
     }
 }
